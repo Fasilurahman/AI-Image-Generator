@@ -13,7 +13,7 @@ const ImageGenerator = () => {
     }
 
     const query = inputRef.current.value;
-    const API_KEY = 'PHdRK8xrGYcF5hXciGazwNOKA3JaAOF1dzDLTuCQsvhMS85hXDkLPYqp'; // Replace with your actual API key
+    const API_KEY = 'YOUR_API_KEY'; // Replace with your actual API key
 
     try {
       const response = await axios.get(`https://api.pexels.com/v1/search`, {
