@@ -1,0 +1,128 @@
+.ai-image-generator {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    gap: 20px;
+    max-width: 900px;
+    padding: 20px;
+    background-color: #121C28;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    font-size: 50px;
+    font-weight: 600;
+    color: #F2F2F2;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.header span {
+    color: #DE1B89;
+    font-weight: 700;
+}
+
+.img-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.img-loading img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.img-loading img:hover {
+    transform: scale(1.03);
+}
+
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 800px;
+    height: 60px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: #1F3540;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+    width: 70%;
+    height: 40px;
+    padding-left: 15px;
+    font-size: 16px;
+    color: white;
+    background: transparent;
+    border: 2px solid #333;
+    border-radius: 30px;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.search-input::placeholder {
+    color: #999;
+}
+
+.search-input:focus {
+    border-color: #DE1B89;
+    color: #F2F2F2;
+}
+
+.generate-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    height: 50px;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+    border-radius: 50px;
+    background: #DE1B89;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.generate-btn:hover {
+    background: #D7176A;
+}
+
+.loading-bar {
+    width: 70%;
+    height: 6px;
+    background: #DE1B89;
+    border-radius: 5px;
+    margin-top: 10px;
+    animation: loadingBar 2s infinite;
+}
+
+@keyframes loadingBar {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 60%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.loading-text {
+    font-size: 16px;
+    color: #F2F2F2;
+    margin-top: 10px;
+}
